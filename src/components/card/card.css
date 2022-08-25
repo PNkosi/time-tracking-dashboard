@@ -1,0 +1,90 @@
+.work-card-bg {
+  background-color: var(--light-red-work);
+}
+
+.play-card-bg {
+  background-color: var(--soft-blue-play);
+}
+
+.study-card-bg {
+  background-color: var(--light-red-study);
+}
+
+.exercise-card-bg {
+  background-color: var(--lime-green-exercise);
+}
+
+.social-card-bg {
+  background-color: var(--violet-social);
+}
+
+.self-care-card-bg {
+  background-color: var(--soft-orange-self-care);
+}
+
+.card {
+  margin-block: 30px;
+  position: relative;
+  height: 190px;
+}
+
+.card__icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.card__information {
+  background-color: var(--dark-blue);
+  color: rgb(212, 212, 212);
+  margin-top: 3rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.card__information:hover {
+  background-color: hsl(235, 46%, 25%);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__body {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-hours {
+  font-weight: var(--light);
+}
+
+.previous-hours {
+  color: var(--pale-blue);
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 360px;
+    margin-block: 0;
+    height: 100%;
+  }
+
+  .card__information {
+    height: 80%;
+  }
+
+  .current-hours {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .previous-hours {
+    font-size: 1rem;
+  }
+}
